@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url();
+}
+iframe{
+    background-image: url(187163.jpg);
+}
+
+header {
+    position: sticky ;
+    width: 100%;
+    height: 80px;
+    background: rgb(4, 152, 23);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .box {
+    display: flex;
+}
+
+.logo a {   
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu a {
+    margin: 20px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover,
+li .active {
+    background: white;
+    color: black;
+}
+
+.menu-btn i {
+    color: rgb(255, 255, 255);
+    font-size: 42px;
+    cursor: pointer;
+    display: none;
+}
+
+#click {
+    display: none;
+}
+
+footer{
+    height: 110px;
+    background: rgb(13, 128, 0);
+}
+footer .box {
+    float: left;
+    width: 25%;
+    margin: 2%;
+}
+.a11{
+    display: none;
+}
+
+@media screen and (max-width : 712px) {
+    .menu-btn i {
+        display: block;
+    }
+    .a11{
+        display: block;
+    }
+
+    .box.menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: rgba(182, 182, 182, 0.772);
+        height: max-content;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    #click:checked ~ .box.menu {
+        left: 0%;
+    }
+
+    .menu li {
+        margin: 40px 0;
+    }
+
+
+    .menu a:hover,
+    li .active {
+        background: none;
+        color: greenyellow;
+    }
+    .box.menu a{
+        color: black;
+        text-transform: uppercase;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    footer{
+        height: max-content;
+    }
+
+    footer .box {
+        float: none;
+        display: flex;
+        width: 95%;
+        margin: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 714px){
+    footer{
+        width: 100%;
+    }
+    footer .box {
+        float: none;
+        display: block;
+        width: 95%;
+        margin: 20px;
+        text-align: center;
+    }
+}
+@media screen and (max-width : 343px){
+    .chu_logo{
+        display: none;
+    }
+}
+@media screen and (max-width : 277px){
+    .box p{
+        display: none;
+    }
+}

@@ -1,0 +1,64 @@
+.sanpham{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box{
+    float: left;
+    width: 200px;
+    height: 250px;
+    background-color: rgba(231, 231, 231, 0.628);
+    margin: 3%;
+    border-radius: 10px;     
+    border: 2px solid gray;
+}
+.box:hover{
+    zoom: 1.1;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    width: 95%;
+    position: relative;
+    left: 3%;
+    top: 1%;
+}
+.card>img{
+    height: 90px;
+    width: 90%;
+    margin: 5%;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.tenloai{
+    font-size: 30px;
+    width: 300px;
+}
+.infor>img{
+    position: relative;
+    width: 70%;
+    top:20px;
+    left: -10px;
+    float: right;
+}
+.infor>.gia{
+    margin-top: 50px;
+    color: red;
+    position: relative;
+}
+
+.infor>.ten{
+    position: relative;
+    color: black;
+    float: left;
+}
+.mua{
+    position: absolute;
+    width: 50px;
+    top: 210px;
+    left: 3px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
